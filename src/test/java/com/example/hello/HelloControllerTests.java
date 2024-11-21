@@ -23,7 +23,7 @@ public class HelloControllerTests {
     public void welcome_ok() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello World!")));
+                .andExpect(content().string(equalTo("Hello World! This is Springboot.")));
     }
 
 }
